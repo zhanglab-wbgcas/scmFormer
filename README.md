@@ -48,10 +48,6 @@ in which
 - **Testdata_path=The path of query scRNA-seq datasets**
 - **Testdata_name=The name of query scRNA-seq datasets** 
 
-It is recommended that The label file be in the same directory as the corresponding data set and be named Labels.csv
-The label file should be a n rows \* 1 column vector. For example,
-![image](https://github.com/zhanglab-wbgcas/CIForm/blob/main/Tutorial/Labels.png)
-
 
 ># Tutorial
 
