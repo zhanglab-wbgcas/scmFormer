@@ -91,15 +91,6 @@ np.save(log_dir+"emb_mod1s.npy",emb_mod1s)
 np.save(log_dir+"emb_mod2s.npy",emb_mod2s)
 ```
 
-in which 
-
-- **s=The length of sub-vector**,
-- **referece_datapaths=The path of annotated scRNA-seq datasets**
-- **Train_names=The name of annotated scRNA-seq datasets** 
-- **Testdata_path=The path of query scRNA-seq datasets**
-- **Testdata_name=The name of query scRNA-seq datasets** 
-
-
 ># Tutorial
 
 ## processsed Data
