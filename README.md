@@ -1,9 +1,9 @@
-# scmGPT
+# scmFormer
 ![image]()
 
 ># Introduction
 
-scmGPT(single-cell multimodal generative pre-training transformer), a Transformer-based model, can be used to integrate and generate single-cell omics data. 
+scmFormer(single-cell multi-modal/multi-task transformer), a Transformer-based model, can be used to integrate and generate single-cell omics data. 
 
 Instructions and examples are provided in the following tutorials.
 
@@ -26,7 +26,7 @@ the second modality(scATAC-seq)  dataset.
 
 ## Output file
 ```
-After the scmGPT model, the model will be save at: "log/scmGPT.tar".
+After the scmFormer model, the model will be save at: "log/scmFormer.tar".
 The latent representations for each modality  are saved in the log/mod1.npy,log/mod2.npy
 ```
 
@@ -42,9 +42,9 @@ import torch
 torch.set_default_tensor_type(torch.DoubleTensor)
 import os
 
-from scmGPT.utils import *
-from scmGPT.model import GPT
-from scmGPT.train_model import Trainer
+from scmFormer.utils import *
+from scmFormer.model import GPT
+from scmFormer.train_model import Trainer
 same_seeds(2023)
 
 import time
