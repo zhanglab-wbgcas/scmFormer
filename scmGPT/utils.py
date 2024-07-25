@@ -71,7 +71,9 @@ def getXY_protein(mod_paths, mod_names):
     adata_mod2 = sc.read_h5ad(mod_paths[1] + mod_names[1])
     adata_mod2.var_names_make_unique()
     adata_mod2.obs['domain_id'] = 1
-
+    from muon import prot as pt
+    pt.pp.clr(adata_mod2,axis=1)
+    
     num_cell1 = adata_mod1.shape[1]
     num_cell2 = adata_mod2.shape[1]
 
